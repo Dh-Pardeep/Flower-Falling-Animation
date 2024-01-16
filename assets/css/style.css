@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .bg_image_two {
     background-image: url("../image/png/secondimg.png");
     z-index: -1;
@@ -13,4 +14,43 @@
     background-size: cover;
 }
 
+.loader img:nth-child(5n + 5) {
+    -webkit-animation-delay: 1.3s;
+  }
+  .loader img:nth-child(3n + 2) {
+    -webkit-animation-delay: 1.5s;
+  }
+  .loader img:nth-child(2n + 5) {
+    -webkit-animation-delay: 1.7s;
+  }
+  .loader img:nth-child(3n + 10) {
+    -webkit-animation-delay: 2.7s;
+  }
+  .loader img:nth-child(7n + 2) {
+    -webkit-animation-delay: 3.5s;
+  }
+  .loader img:nth-child(4n + 5) {
+    -webkit-animation-delay: 5.5s;
+  }
+  .loader img:nth-child(3n + 7) {
+    -webkit-animation-delay: 8s;
+  }
+  
+  
+  
+.image_one {
+    animation: image_one_key 10s infinite linear;
+}
 
+@keyframes image_one_key {
+    0% {
+        transform: translate(0px, 0px) rotateZ(0deg);
+    }
+
+    50% {
+        transform: translate(20px, 200vh) rotateZ(180deg);
+    }
+    100% {
+        transform: translate(20px, 200vh) rotateZ(180deg);
+    }
+}
