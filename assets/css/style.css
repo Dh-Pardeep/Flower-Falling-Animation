@@ -14,54 +14,70 @@
     background-size: cover;
 }
 
-.loader img:nth-child(5n + 5) {
-    -webkit-animation-delay: 1.3s;
+.loaderone .span_one {
+    animation-delay: 200ms; 
 }
-
-.loader img:nth-child(3n + 2) {
-    -webkit-animation-delay: 1.5s;
+.loaderone .span_two {
+    animation-delay: 2s; 
 }
-
-.loader img:nth-child(2n + 5) {
-    -webkit-animation-delay: 1.7s;
+.loaderone .span_three {
+    animation-delay:4s; 
 }
-
-.loader img:nth-child(3n + 10) {
-    -webkit-animation-delay: 2.7s;
-}
-
-.loader img:nth-child(7n + 2) {
-    -webkit-animation-delay: 3.5s;
-}
-
-.loader img:nth-child(4n + 5) {
-    -webkit-animation-delay: 5.5s;
-}
-
-.loader img:nth-child(3n + 7) {
-    -webkit-animation-delay: 8s;
+.loaderone .span_four {
+    animation-delay: 7s; 
 }
 
 
-
-.image_one {
-    animation: image_one_key 10s infinite linear;
+.loaderone span{
+    animation: image_one_key 9s infinite linear;
 }
 
 @keyframes image_one_key {
     0% {
-        transform: translate(0px, 0px) rotateZ(0deg);
-    }
+        width: 50px;
+        height: 50px;
+        transform: translate(0px, 0px) rotate(0deg);
+        background-image: url("/assets/image/svg/one.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
 
-    5% {
-        opacity: 1;
     }
-
     50% {
-        transform: translate(20px, 200vh) rotateZ(180deg);
+        width: 50px;
+        height: 50px;
+        top: 45%;
+        background-image: url("/assets/image/svg/one.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform:rotate(180deg);
+    }
+    51% {
+        width: 50px;
+        height: 50px;
+        top: 46%;
+        background-image: url("/assets/image/svg/Section_two.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform:rotate(180deg);
+    }
+
+    75% {
+        width: 50px;
+        height: 50px;
+        top: 75%;
+        background-image: url("/assets/image/svg/Section_two.svg");
+        transform:rotate(300deg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
 
     100% {
-        transform: translate(20px, 200vh) rotateZ(180deg);
+        width: 50px;
+        height: 50px;
+        top: 100%;
+        background-image: url("/assets/image/svg/Section_two.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform:rotateZ(360deg);
     }
 }
