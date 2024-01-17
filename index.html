@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <main class="overflow-hidden relative loaderone">
+    <main class="overflow-hidden relative loaderone bg-black">
         <span class="absolute w-[50px] h-[50px]  top-[156px] left-[37px] image_one  span_one"></span>
         <span class="absolute w-[50px] h-[50px]  top-[2px]  right-[19px]  image_one span_one"></span>
         <span class="absolute w-[50px] h-[50px]  top-[323px] left-[300px] image_one span_two"></span>
@@ -18,7 +18,7 @@
         <span class="absolute w-[50px] h-[50px]  top-[0px]  right-[500px] image_one span_three"></span>
         <span class="absolute w-[50px] h-[50px]  top-[400px]  right-[20px]  image_one span_four"></span>
         <span class="absolute w-[50px] h-[50px]  top-[507px]  left-[93px] image_one span_four"></span>
-        <section class="bg_image_one h-screen">
+        <section class="bg_image_one h-screen bg-fixed">
             <div class="container max-w-[1140px] mx-auto flex flex-col h-screen">
                 <div class="flex items-center justify-center grow relative z-[20] px-4">
                     <div
@@ -32,9 +32,6 @@
                 </div>
             </div>
         </section>
-        <div class="relative">
-            <div class="bg-black w-full h-[40px] blur-[11px] absolute z-50 top-[-20px] left-0 hidden lg:block"></div>
-        </div>
         <section class="bg_image_two py-4">
             <div class="container max-w-[1140px]  mx-auto relative loader flex flex-col min-h-[100vh]">
                 <div class="flex items-center flex-col justify-center grow relative z-[20]  flex-wrap px-4">
@@ -84,19 +81,20 @@
                 </div>
             </div>
         </section>
-        <footer class="bg-black bg-opacity-85 relative z-30">
-            <div class="container max-w-[1140px] mx-auto py-4">
-                <div class="flex gap-5 justify-center items-center">
-                    <a class="w-[35px] h-[35px] hover:scale-110 transition-all duration-200 ease-linear"
-                        href="https://twitter.com" target="_blank"><img src="./assets/image/svg/twitter_icon.svg"
-                            alt="twitter_icon" /></a>
-                    <a class="w-[35px] h-[35px] hover:scale-110 transition-all duration-200 ease-linear"
-                        href="https://linkedin.com" target="_blank"><img src="./assets/image/svg/telegram_icon.svg"
-                            alt="telegram_icon" /></a>
-                </div>
-            </div>
-        </footer>
     </main>
+    <footer class="bg-[#141414] relative z-30">
+        <div class="container max-w-[1140px] mx-auto py-4">
+            <div class="flex gap-5 justify-center items-center">
+                <a class="w-[35px] h-[35px] hover:scale-110 transition-all duration-200 ease-linear"
+                    href="https://twitter.com" target="_blank"><img src="./assets/image/svg/twitter_icon.svg"
+                        alt="twitter_icon" /></a>
+                <a class="w-[35px] h-[35px] hover:scale-110 transition-all duration-200 ease-linear"
+                    href="https://linkedin.com" target="_blank"><img src="./assets/image/svg/telegram_icon.svg"
+                        alt="telegram_icon" /></a>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script src="./assets/js/app.js"></script>
