@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg,  #e05096 0%, #f3c9b4 100%);
+    background: linear-gradient(180deg, #e05096 0%, #f3c9b4 100%);
     border-radius: 12px;
 }
 
@@ -38,37 +38,45 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         opacity: 0;
+        transition: all 200ms linear;
+
     }
 
     5% {
         opacity: 1;
+        transition: all 200ms linear;
+
     }
 
     49% {
         width: 50px;
         height: 50px;
         top: 47%;
+        transition: all 200ms linear;
         background-image: url("/assets/image/svg/one.svg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         transform: rotate(180deg);
         opacity: 1;
     }
+
     50% {
         width: 50px;
         height: 50px;
         top: 47%;
+        transition: all 200ms linear;
         background-image: url("/assets/image/svg/one.svg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         transform: rotate(180deg);
-        opacity: 0;
+        opacity: 1;
     }
 
     51% {
         width: 55px;
         height: 55px;
         top: 48%;
+        transition: all 200ms linear;
         background-image: url("/assets/image/svg/Section_two.svg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -79,6 +87,7 @@
     75% {
         width: 55px;
         top: 75%;
+        transition: all 200ms linear;
         background-image: url("/assets/image/svg/Section_two.svg");
         transform: rotate(300deg);
         background-repeat: no-repeat;
@@ -89,6 +98,7 @@
     100% {
         height: 55px;
         top: 100%;
+        transition: all 200ms linear;
         background-image: url("/assets/image/svg/Section_two.svg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
