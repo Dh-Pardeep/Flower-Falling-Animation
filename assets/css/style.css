@@ -1,18 +1,3 @@
-.bg_image_one {
-    background-image: url("../image/png/firstImage.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg_image_two {
-    background-image: url("../image/png/secondimg.png");
-    z-index: -1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .loaderone .span_one {
     animation-delay: 200ms;
 }
