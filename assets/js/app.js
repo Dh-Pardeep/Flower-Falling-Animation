@@ -6,7 +6,7 @@ const tl = gsap.timeline({
     pin: false,
     start: "10% 20%",
     end: "center center",
-    markers: true,
+    markers: false,
     scrub: true,
   },
 });
