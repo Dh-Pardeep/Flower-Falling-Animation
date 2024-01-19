@@ -1,22 +1,22 @@
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-// const tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#main_section",
-//     pin: true,
-//     start: "top top",
-//     end: "bottom top",
-//     markers: true,
-//     scrub: true,
-//   },
-// });
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#main_section",
+    pin: false,
+    start: "10% 20%",
+    end: "center center",
+    markers: true,
+    scrub: true,
+  },
+});
 
-// tl.fromTo(
-//   ".set_from",
-//   {
-//     y:"150%"
-//   },
-//   {
-//     y:"0"
-//   }
-// );
+tl.fromTo(
+  ".set_from",
+  {
+    y:"100%"
+  },
+  {
+    y:"0"
+  }
+);
