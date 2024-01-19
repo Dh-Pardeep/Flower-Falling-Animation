@@ -7,13 +7,14 @@
     <link rel="shortcut icon" href="./assets/image/png/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Tsukuyomi</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <main class="overflow-hidden relative loaderone bg-black">
         <img class="w-full absolute left-0 top-[-16px] min-[400px]:top-[-20px] min-[460px]:top-[-23px] min-[512px]:top-[-29px] sm:top-[-34px] md:top-[-39px] min-[870px]:top-[-44px] lg:top-[-49px]  min-[1105px]:top-[-55px] xl:top-[-59px] min-[1370px]:top-[-70px] min-[1600px]:top-[-88px] object-cover z-30"
-        src="./assets/image/svg/jointframe.svg" alt="joint-frame">
+            src="./assets/image/svg/jointframe.svg" alt="joint-frame">
         <span class="absolute z-[10] w-[50px] h-[50px]  top-[156px] left-[37px] image_one  span_one"></span>
         <span class="absolute z-[10] w-[50px] h-[50px]  top-[2px]  right-[19px]  image_one span_one"></span>
         <span class="absolute z-[10] w-[50px] h-[50px]  top-[323px] left-[300px] image_one span_two"></span>
@@ -24,7 +25,7 @@
         <span class="absolute z-[10] w-[50px] h-[50px]  top-[507px]  left-[93px] image_one span_four"></span>
         <section class="bg-[url(./assets/image/png/firstImage.png)] bg-no-repeat bg-cover bg-center h-screen ">
             <div class="container max-w-[1140px] mx-auto flex flex-col h-screen">
-                <div class="flex items-center justify-center grow static z-[20] px-4">
+                <div class="flex items-center justify-center grow static z-[20] px-4"  data-aos="zoom-in">
                     <div
                         class="bg-black rounded-lg  bg-opacity-60 border border-black max-w-[650px] mx-auto p-5 sm:p-7 lg:p-10">
                         <h1 class="text-center text-[35px] md:text-[40px] lg:text-[46px] text-white font-bold ">
@@ -36,13 +37,14 @@
                 </div>
             </div>
         </section>
-        <section id="main_section" class="bg-[url(./assets/image/png/secondimg.png)] bg-no-repeat bg-cover bg-center py-4 relative">
+        <section id="main_section"
+            class="bg-[url(./assets/image/png/secondimg.png)] bg-no-repeat bg-cover bg-center py-4 relative">
             <img class="w-full absolute left-0 top-[-18px] min-[400px]:top-[-20px] min-[460px]:top-[-23px] min-[512px]:top-[-26px] sm:top-[-32px] md:top-[-36px] min-[870px]:top-[-40px] lg:top-[-46px]  min-[1105px]:top-[-50px] xl:top-[-59px] min-[1370px]:top-[-66px] min-[1600px]:top-[-83px] object-cover "
                 src="./assets/image/svg/jointframe.svg" alt="joint-frame">
             <div class="container max-w-[1140px]  mx-auto flex flex-col min-h-[100vh] ">
-                <div class="flex items-center flex-col justify-center grow static z-[20]  flex-wrap px-4 set_from" >
+                <div class="flex items-center flex-col justify-center grow static z-[20]  flex-wrap px-4 set_from">
                     <div
-                        class="w-full flex flex-col items-center bg-black rounded-lg  bg-opacity-65 border border-black pt-4 pb-6 lg:py-10">
+                        class="w-full flex flex-col items-center bg-black rounded-lg  bg-opacity-65 border border-black pt-4 pb-6 lg:py-10"  data-aos="fade-up">
                         <h2
                             class="text-center mb-6 md:mb-8 lg:mb-10 text-[30px] md:text-[35px] lg:text-[40px] text-white font-bold">
                             Tokenomics</h2>
@@ -101,8 +103,15 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script> -->
     <script src="./assets/js/app.js"></script>
 </body>
 
