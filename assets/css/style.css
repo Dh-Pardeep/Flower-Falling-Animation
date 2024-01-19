@@ -48,10 +48,10 @@
 
     }
 
-    47% {
+    49% {
         width: 50px;
         height: 50px;
-        top: 47%;
+        top: 49%;
         transition: all 200ms linear;
         background-image: url("/assets/image/svg/one.svg");
         background-repeat: no-repeat;
@@ -60,10 +60,10 @@
         opacity: 1;
     }
 
-    47% {
+    49% {
         width: 50px;
         height: 50px;
-        top: 44%;
+        top: 46%;
         transition: all 200ms linear;
         background-image: url("/assets/image/svg/one.svg");
         background-repeat: no-repeat;
@@ -90,7 +90,7 @@
         top: 75%;
         transition: all 200ms linear;
         background-image: url("/assets/image/svg/Section_two.svg");
-        transform: rotate(300deg);
+        transform: rotate(270deg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         opacity: 1;
